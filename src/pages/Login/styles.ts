@@ -52,6 +52,7 @@ export const ContentWrapper = styled.div`
   button{
     font-size: 1.5rem;
     
+    
     margin-top: 6rem;
     padding: 2rem;
 
