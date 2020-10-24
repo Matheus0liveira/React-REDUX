@@ -11,6 +11,16 @@ const SignInRequest = (
 };
 
 
+const SignInSuccess = (
+  { token }: {token: string}) => {
+
+    return action('@auth/SIGN_IN_SUCCESS',{
+      token
+    })
+
+};
+
+
 export default SignInRequest;
 
 
