@@ -8,10 +8,10 @@ import { Form, ContentWrapper } from './styles';
 
 const Login: React.FC = () => {
 
-  const { loadingSignInRequest }  = useSelector((state: StoreState) => state.auth);
+  const { token, loadingSignInRequest }  = useSelector((state: StoreState) => state.auth);
 
 
-  console.log('LOADING', loadingSignInRequest);
+  console.log('token', token);
 
  const dispatch = useDispatch();
 
@@ -36,7 +36,7 @@ const Login: React.FC = () => {
         </ContentWrapper>
         
         <ContentWrapper>
-          <button type="submit" onClick={() => dispatch(signInRequest({ email: 'matheus@mail.com', password: '123456'}))}>ENTRAR</button>
+         <button type="submit" onClick={() => dispatch(signInRequest({ email: 'matheus@mail.com', password: '12345678'}))}>{ loadingSignInRequest ?  'Carregando': 'Entrar' } </button>
         </ContentWrapper>
 
     </Form>

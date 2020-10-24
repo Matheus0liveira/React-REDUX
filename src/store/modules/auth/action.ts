@@ -6,7 +6,7 @@ export const signInRequest = (
     return action('@auth/SIGN_IN_REQUEST',{
       email,
       password
-    })
+    });
 
 };
 
@@ -17,6 +17,13 @@ export const signInSuccess = (
     return action('@auth/SIGN_IN_SUCCESS',{
       token
     })
+
+};
+
+
+export const signInFailure = () => {
+
+    return action('@auth/SIGN_IN_FAILURE');
 
 };
 

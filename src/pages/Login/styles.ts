@@ -27,7 +27,7 @@ export const ContentWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   
-  width: 20%;
+  width: 30%;
   min-width: 20rem;
   
   font-size: 2.5rem;
@@ -44,6 +44,7 @@ export const ContentWrapper = styled.div`
     border: none;
     padding: 1rem 2rem;
     background: #E1E5F2;
+    border: 0.2rem solid #3F88C5;
     border-radius: 0.8rem;
     outline: 0;
   }
