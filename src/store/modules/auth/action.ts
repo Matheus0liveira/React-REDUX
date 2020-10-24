@@ -1,6 +1,6 @@
 import { action } from 'typesafe-actions';
 
-const SignInRequest = (
+export const signInRequest = (
   { email, password}: {email: string, password: string}) => {
 
     return action('@auth/SIGN_IN_REQUEST',{
@@ -11,7 +11,7 @@ const SignInRequest = (
 };
 
 
-const SignInSuccess = (
+export const signInSuccess = (
   { token }: {token: string}) => {
 
     return action('@auth/SIGN_IN_SUCCESS',{
@@ -21,6 +21,6 @@ const SignInSuccess = (
 };
 
 
-export default SignInRequest;
+
 
 

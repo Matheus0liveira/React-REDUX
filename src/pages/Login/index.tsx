@@ -1,7 +1,7 @@
 import React, { FormEvent } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { StoreState } from '../../store/createStore';
-import SignInRequest from '../../store/modules/auth/action';
+import { signInRequest } from '../../store/modules/auth/action';
 
 import { Form, ContentWrapper } from './styles';
 
@@ -36,7 +36,7 @@ const Login: React.FC = () => {
         </ContentWrapper>
         
         <ContentWrapper>
-          <button type="submit" onClick={() => dispatch(SignInRequest({ email: 'matheus@mail.com', password: '123456'}))}>ENTRAR</button>
+          <button type="submit" onClick={() => dispatch(signInRequest({ email: 'matheus@mail.com', password: '123456'}))}>ENTRAR</button>
         </ContentWrapper>
 
     </Form>
