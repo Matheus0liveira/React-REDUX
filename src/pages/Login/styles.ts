@@ -60,12 +60,14 @@ export const ContentWrapper = styled.div`
     color: #363946;
     font-weight: bold;
     
-    transition: opacity .2s ease ;
+    transition: all .2s ease ;
     cursor: pointer;
 
 
     &:hover{
-      opacity: 0.6;
+      opacity: 0.8;
+      transform: scale(1.02);
+
 
     }
 

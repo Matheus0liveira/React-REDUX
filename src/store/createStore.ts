@@ -1,10 +1,10 @@
 import { applyMiddleware, createStore, Middleware, Reducer } from 'redux';
-import { AuthAction } from './modules/auth/types';
+import { AuthAction, AuthState } from './modules/auth/types';
 
 
 //Todos os states da store
 export interface StoreState {
-  auth: AuthAction 
+  auth: AuthState;
 }
 
 
